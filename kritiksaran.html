@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik Saran - SMPN 163 JKT</title>
+    <link rel="stylesheet" href="kritiksaran.css">
+</head>
+<body>
+ <!-- Notifikasi Scroll -->
+ <div id="scrollReminder" class="scroll-reminder">
+    Scroll ke bawah untuk informasi lebih lanjut ⬇
+</div>
+    <header>
+        Selamat Datang di SMPN 163 Jakarta!
+            <!-- Alamat Sekolah di bawah judul -->
+    <p class="alamat-sekolah">
+        Jl. Empang Tiga Pejaten Timur, Ps. Minggu, Jakarta Selatan, Telp. : 021-7004079
+    </p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="tentangkami.html">Tentang Kami</a>
+        <a href="kegiatan.html">Kegiatan</a>
+        <a href="kritiksaran.html">Kritik dan Saran</a>
+    </nav>
+
+    <section class="content">
+        <h2>Kritik dan Saran</h2>
+        <p>Silakan tuliskan kritik dan saran Anda untuk kemajuan sekolah kami.</p>
+
+        <form id="feedbackForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="feedback">Kritik dan Saran:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <div id="result" style="margin-top: 20px;"></div>
+<ul id="feedbackList"></ul>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Sekolah Inspirasi. Semua Hak Dilindungi.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

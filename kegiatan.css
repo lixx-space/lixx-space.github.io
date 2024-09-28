@@ -1,0 +1,161 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(135deg, #0069bf, #002069);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.alamat-sekolah {
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #002069;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #002069;
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('2023-12-28.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center; /* Memusatkan teks */
+    margin: 20px 0; /* Memberikan margin atas dan bawah */
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    min-height: 80px; /* Ukuran minimal untuk hari */
+}
+
+.event {
+    background-color: #0069bf;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+.event-list {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#002069;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Notifikasi Scroll */
+.scroll-reminder {
+    position: fixed;
+    bottom: 20px; /* Ubah dari top ke bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #002069;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.scroll-reminder.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
